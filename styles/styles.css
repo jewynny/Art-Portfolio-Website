@@ -10,24 +10,41 @@ body {
   background: #ececec;
 }
 
-/* Use a unique and descriptive class name */
+/* Cover image container */
+.cover-image-container {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the top */
+}
+
+/* Image styles */
+.coverimage {
+  width: 650px;
+  height: auto;
+  margin-right: 50px; /* Space between image and text */
+  margin-left: 30px; /* Space before the image */
+}
+
+/* Title styles */
 .bodoni-moda-title {
   font-family: 'Bodoni Moda', serif; /* Added serif for fallback */
-  font-weight: 500; /* Changed to 700 for bold */
+  font-weight: 500; /* Use 500 or 700 for bold */
   font-style: normal;
-  font-size: 100px; /* Set the desired font size */
-  /* Consider removing !important unless absolutely necessary */
+  font-size: 80px; /* Set the desired font size */
+  margin: 0; /* Remove default margin */
 }
 
-/* images */
-.coverimage-container {
+/* Text container */
+.text-container {
+  /* position: bottom; */
   display: flex;
-  align-items: top;
+  flex-direction: column; /* Stack text vertically */
+  justify-content: flex-end; /* Aligns text to the bottom */
 }
 
-.coverimage {
-  width: 600px;
-  height: auto;
-  margin-right: 50px;
-  margin-left: 30px;
+
+
+/* Subtitle styles */
+.cover-image-text {
+  margin: 0; /* Remove default margin */
+  font-size: 24px; /* Adjust size as needed */
 }
